@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<title>My Portfolio</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+<meta name="viewport" content="width-device-width, initial-scale-1" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=KoHo" />
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Koho", Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .row-padding img {
+        margin-bottom: 12px;
+    }
+
+    /* Set the width of the sidebar to 120px */
+
+    .sidebar {
+        width: 120px;
+        background: grey;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+
+    #main {
+        margin-left: 120px;
+    }
+
+    /* Remove margins from "page content" on small screens */
+
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+</style>
+
+<body class="pf-gray">
+    <nav class="pf-sidebar pf-bar-block pf-small pf-hide-small pf-center">
+        <img src="docs&pics/logo_small.png" alt="logo_small" style="width: 5%;">
+        <a href="#" class="pf-bar-item pf-button pf-padding-large pf-grey">
+            <i class="fa fa-home pf-xxlarge"></i>
+            <p>Home</p>
+        </a>
+        <a href="#about" class="pf-bar-item pf-button pf-padding-large pf-hover-black">
+            <i class="fa fa-user pf-xxlarge"></i>
+            <p>About me</p>
+        </a>
+        <a href="#curriculum vitae" class="pf-bar-item pf-button pf-padding-large pf-hover-black">
+            <i class="fa fa-eye pf-xxlarge"></i>
+            <p>Curriculum Vitae</p>
+        </a>
+        <a href="#contact" class="pf-bar-item pf-button pf-padding-large pf-hover-black">
+            <i class="fa fa-envelope pf-xxlarge"></i>
+            <p>Contact</p>
+        </a>
+    </nav>
+
+    <!--Navbar on small screens-->
+    <div class="pf-top pf-hide-large pf-hide-medium" id="myNavbar">
+        <div class="pf-bar pf-grey pf-opacity pf-hover-opacity-off pf-center pf-small">
+            <a href="#" class="pf-bar-item pf-button" style="width: 25% impo !important;">Home</a>
+            <a href="#about" class="pf-bar-item pf-button" style="width: 25% impo !important;">About Me</a>
+            <a href="#curriculum vitae" class="pf-bar-item pf-button" style="width: 25% impo !important;">Curriculum
+                Vitae</a>
+            <a href="#contact" class="pf-bar-item pf-button" style="width: 25% impo !important;">Contact</a>
+        </div>
+    </div>
+
+    <!--Page Content-->
+    <div class="pf-padding-large" id="main">
+        <!--Header/Home-->
+        <header class="pf-container pf-padding-32 pf-center pf-grey" id="home">
+            <h1 class="pf-jumbo">Welcome to my portfolio</h1>
+            <p>Yannick Beterams .net Developing</p>
+            <img src="/Docs&Pics/c#.jpg" alt="boy" class="pf-image" width="992" height="1108">
+        </header>
+
+        <!--About me-->
+        <div class="pf-content pf-justify pf-text-black pf-padding-64" id="about">
+            <h2 class="pf-text-light">Yannick Beterams</h2>
+            <hr style="width: 200px" class="pf-opacity">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi explicabo assumenda in
+                molestias corporis tenetur ut enim reiciendis. Deserunt pariatur modi aliquam necessitatibus? Natus ex
+                eveniet praesentium voluptate iure.</p>
+            <h3 class="pf-padding-16 pf-text-light">Xp</h3>
+            <p class="pf-wide">C#</p>
+            <div class="pf-white">
+                <div class="pf-dark-grey" style="height: 28px; width: 95%;"></div>
+                <p class="pf-wide">SQL server</p>
+                <div class="pf-white">
+                    <div class="pf-dark-grey" style="height: 28px; width: 80%;"></div>
+                    <p class="pf-wide">Html</p>
+                    <div class="pf-white">
+                        <div class="pf-dark-grey" style="height: 28px; width: 70%;"></div>
+                        <p class="pf-wide">JavaScript</p>
+                        <div class="pf-white">
+                            <div class="pf-dark-grey" style="height: 28px; width: 50%;"></div>
+                        </div><br>
+
+                        <button class="pf-button pf-light pf-padding-large pf-section">
+                            <i class="fa fa-download"></i> Download CV
+                        </button>
+
+                        <!-- Testimonials -->
+                        <h3 class="pf-padding-24 pf-text-light">My References</h3>
+                        <p><span class="pf-large pf-margin-right">name & </span>function @</p>
+
+                        <p><span class="pf-large pf-margin-right">name & </span>function @</p>
+
+                        <p><span class="pf-large pf-margin-right">name & </span>function @</p>
+                        <!--End of about me-->
+
+                        <!--Contact-->
+                        <div class="pf-padding-64 pf-content pf-text-black" id="contact">
+                            <h2 class="pf-text-light">Contact</h2>
+                            <hr style="width: 200px;" class="pf-opacity">
+
+                            <div class="pf-section">
+                                <p><i class="fa fa-phone fa-fw pf-text-white pf-xxlarge pf-margin right"></i>Phone:
+                                    (+32)0467/007.885
+                                </p>
+                                <p><i class="fa fa-envelope fa-fw pf-text-white pf-xxlarge pf-margin right"></i>Email:
+                                    beterams.yannick@gmail.com
+                                </p>
+                                <p><i
+                                        class="fa fa-Linkedin fa-fw pf-text-white pf-xxlarge pf-margin right"></i>LinkedIn:
+                                    www.linkedin.com/in/yannickbeterams
+                                </p>
+                                <p><i class="fa fa-github fa-fw pf-text-white pf-xxlarge pf-margin right"></i>Github:
+                                    https://github.com/YannickB23
+                                </p>
+                            </div><br>
+                        </div>
+                        <!--End of contact me-->
+                        <footer>
+                            <p class="pf-medium">
+                                Copyrights @ 2021 Yannick Beterams. All rights reserved.
+                            </p>
+                        </footer>
+                        <!--End page content-->
+                    </div>
+</body>
+
+</html>
