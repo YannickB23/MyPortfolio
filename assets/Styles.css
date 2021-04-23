@@ -40,16 +40,8 @@ hr {
 img {
   vertical-align: middle;
 }
-a {
-  color: inherit;
+* {
+  box-sizing: inherit;
 }
-.pf-table,
-.pf-table-all {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  display: table;
-}
-.pf-table-all{
-    
-}
+
+
