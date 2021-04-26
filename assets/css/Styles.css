@@ -1,13 +1,33 @@
 html,
 body {
   font-family: "Koho", "Verdana", "Geneva", "Tahoma", "sans-serif";
-  font-size: 15px;
+  font-size: 12px;
   color: whitesmoke;
   line-height: 1.5;
-  background-color: gray;
+  background-color: rgb(39, 22, 22);
 }
 
-.pf-sidebar {
+.pf-text-title {
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+.pf-text-small {
+  font-size: 8px;
+  color: whitesmoke;
+}
+
+.pf-content {
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+.pf-section {
+  font-size: 12px;
+  color: whitesmoke;
+}
+
+.pf-navbar {
   background: url(/assets/images/yBlogo1Transp.png);
   background-repeat: no-repeat;
   background-size: 160px 160px;
@@ -18,75 +38,111 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(87, 80, 80);
+  background-color: rgb(54, 54, 54);
   overflow-x: hidden;
   padding-top: 150px;
 }
 
-.pf-sidebar a {
+.pf-navbar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #818181;
   display: block;
 }
 
-.pf-sidebar a:hover {
+.pf-navbar a:hover {
   color: #d66767;
 }
 
-/*.pf-sidebar a{
+/*.pf-navbar a{
   visibility: hidden;
 }
 
-.pf-sidebar a:before{
+.pf-navbar a:before{
   font-family: "Koho";
   font-size: 25px;
   display: inline-block;
   content: initial;
   visibility: visible;
 }*/
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.pf-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #d66767;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: whitesmoke;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .main {
-  margin-left: 160px;
+  margin-left: 50px;
   font-size: 28px;
   padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
-  .pf-sidebar {
+  .pf-navbar {
     padding-top: 15px;
   }
-  .pf-sidebar a {
+  .pf-navbar a {
     font-size: 18px;
   }
 }
 
 .pf-button {
-background-color: rgb(87, 80, 80);
-border: 2px;
-color: whitesmoke;
-padding: 12px 30px;
+  background-color: rgb(87, 80, 80);
+  border: 2px;
+  color: whitesmoke;
+  padding: 8px 20px;
 
-margin-bottom: 50px;
-cursor: pointer;
-font: "Koho";
-font-size: 25px;
-border-radius: 10px;
-box-shadow: 0 5px 10px 0 whitesmoke, 0 5px 10px 0 whitesmoke;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font: "Koho";
+  font-size: 15px;
+  border-radius: 5px;
 }
 
 .pf-button:hover {
-background-color: #d66767;
+  background-color: #d66767;
 }
 
-.pf-dark-grey{ 
+.pf-dark-grey {
   background-color: rgb(87, 80, 80);
   border-radius: 10px;
 }
 
-.xp-percent{
+.xp-percent {
   font-size: 15px;
   font-weight: bolder;
   color: #d66767;
 }
-

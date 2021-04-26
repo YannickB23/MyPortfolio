@@ -21,7 +21,7 @@
         margin-bottom: 12px;
     }
 
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    /* Add a left margin to the "page content" that matches the width of the navbar (120px) */
 
     #main {
         margin-left: 120px;
@@ -29,8 +29,8 @@
 </style>
 
 <body class="main">
-    <!--Sidebar-->
-    <nav class="pf-sidebar">
+    <!--Navbar-->
+    <nav class="pf-navbar">
         <a href="#" class="pf-sbBtn">
             <i class="fa fa-home"></i>
             <p>Home</p>
@@ -38,6 +38,10 @@
         <a href="#about" class="pf-sbBtn">
             <i class="fa fa-user"></i>
             <p>About me</p>
+        </a>
+        <a href="#experience" class="pf-sbBtn">
+            <i class="fa fa-user"></i>
+            <p>Experience</p>
         </a>
         <a href="#CV" class="pf-sbBtn">
             <i class="fa fa-eye"></i>
@@ -52,24 +56,33 @@
             <p>Contact</p>
         </a>
     </nav>
+    <!--End of navbar-->
 
     <!--Page Content-->
     <div class="pf-padding-large" id="main">
         <!--Header/Home-->
         <header class="pf-container" id="home">
-            <h1 class="pf-jumbo">Welcome to my portfolio</h1>
-            <p>Yannick Beterams .net Developing</p>
-            <img src="/assets/images/Csharp.jpg" alt="pc" class="pf-image" width="1000" height="900">
+            <h1 class="pf-jumbo">Yannick Beterams .net Developing</h1>
+            <div class="container">
+                <img src="/assets/images/Csharp.jpg" alt="pc" class="pf-image">
+                <div class="overlay">
+                    <div class="text">Welcome to my portfolio</div>
+                </div>
+            </div>
         </header>
+        <!--End of header/home-->
 
         <!--About me-->
         <div class="pf-content" id="about">
-            <h2 class="pf-text-light">Yannick Beterams</h2>
-            <hr style="width: 200px" class="pf-opacity">
+            <h2 class="pf-text-title">About me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi explicabo assumenda in
                 molestias corporis tenetur ut enim reiciendis. Deserunt pariatur modi aliquam necessitatibus? Natus ex
                 eveniet praesentium voluptate iure.</p>
-            <h2 class="pf-content">Xp</h2>
+            <hr style="width: 300px" class="pf-opacity">
+            <!--End of about me-->
+
+            <!--Experience-->
+            <h2 class="pf-text-title" id="experience">Xp</h2>
             <p class="pf-wide">C sharp</p>
             <div class="pf-white">
                 <p class="xp-percent">95%</p>
@@ -87,48 +100,53 @@
                             <p class="xp-percent">40%</p>
                             <div class="pf-dark-grey" style="height: 28px; width: 40%;"></div>
                         </div><br>
+                        <hr style="width: 300px" class="pf-opacity">
+                        <!--End of experience-->
 
-                        <h2 class="pf-content" id="CV">Curriculum Vitae</h2>
+                        <!--CV-->
+                        <h2 class="pf-text-title" id="CV">Curriculum Vitae</h2>
                         <div>
-                            <button class="pf-button" style="width: 92%">
-                                <i class="fa fa-download"></i> Download CV
+                            <p>Click the button to download CV</p>
+                            <button class="pf-button" style="width: 14%">
+                                <i class="fa fa-download"></i> Download
                             </button>
                         </div>
-
+                        <hr style="width: 300px" class="pf-opacity">
+                        <!--End of CV-->
 
                         <!-- Testimonials -->
-                        <h2 class="pf-content" id="myrefs">My References</h2>
+                        <h2 class="pf-text-title" id="myrefs">My References</h2>
                         <p><span class="pf-large pf-margin-right">name & </span>function @</p>
 
                         <p><span class="pf-large pf-margin-right">name & </span>function @</p>
 
                         <p><span class="pf-large pf-margin-right">name & </span>function @</p>
-                        <!--End of about me-->
+                        <hr style="width: 300px" class="pf-opacity">
+                        <!--End of testimonials-->
 
                         <!--Contact-->
-                        <div class="pf-content" id="contact">
-                            <h2 class="pf-text-light">Contact</h2>
-                            <hr style="width: 200px;" class="pf-opacity">
+                        <div class="pf-text-title" id="contact">
+                            <h2 class="pf-text-title">Contact</h2>
 
-                            <div class="pf-section">
-                                <p><i class="fa fa-phone fa-fw pf-text-white pf-xxlarge pf-margin right"></i>Phone:
+                            <div class="pf-content">
+                                <p><i class="fa fa-phone"></i>Phone:
                                     (+32)0467/007.885
                                 </p>
-                                <p><i class="fa fa-envelope fa-fw pf-text-white pf-xxlarge pf-margin right"></i>Email:
+                                <p><i class="fa fa-envelope"></i>Email:
                                     beterams.yannick@gmail.com
                                 </p>
-                                <p><i
-                                        class="fa fa-Linkedin fa-fw pf-text-white pf-xxlarge pf-margin right"></i>LinkedIn:
+                                <p><i class="fa fa-Linkedin"></i>LinkedIn:
                                     www.linkedin.com/in/yannickbeterams
                                 </p>
-                                <p><i class="fa fa-github fa-fw pf-text-white pf-xxlarge pf-margin right"></i>Github:
+                                <p><i class="fa fa-github"></i>Github:
                                     https://github.com/YannickB23
                                 </p>
                             </div><br>
                         </div>
+                        <hr style="width: 300px" class="pf-opacity">
                         <!--End of contact me-->
                         <footer>
-                            <p class="pf-medium">
+                            <p class="pf-text-small">
                                 Copyrights @ 2021 Yannick Beterams. All rights reserved.
                             </p>
                         </footer>
