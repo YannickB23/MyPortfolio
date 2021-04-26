@@ -1,0 +1,92 @@
+html,
+body {
+  font-family: "Koho", "Verdana", "Geneva", "Tahoma", "sans-serif";
+  font-size: 15px;
+  color: whitesmoke;
+  line-height: 1.5;
+  background-color: gray;
+}
+
+.pf-sidebar {
+  background: url(/assets/images/yBlogo1Transp.png);
+  background-repeat: no-repeat;
+  background-size: 160px 160px;
+  background-blend-mode: color-dodge;
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(87, 80, 80);
+  overflow-x: hidden;
+  padding-top: 150px;
+}
+
+.pf-sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.pf-sidebar a:hover {
+  color: #d66767;
+}
+
+/*.pf-sidebar a{
+  visibility: hidden;
+}
+
+.pf-sidebar a:before{
+  font-family: "Koho";
+  font-size: 25px;
+  display: inline-block;
+  content: initial;
+  visibility: visible;
+}*/
+.main {
+  margin-left: 160px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .pf-sidebar {
+    padding-top: 15px;
+  }
+  .pf-sidebar a {
+    font-size: 18px;
+  }
+}
+
+.pf-button {
+background-color: rgb(87, 80, 80);
+border: 2px;
+color: whitesmoke;
+padding: 12px 30px;
+margin-top: 50px;
+margin-bottom: 50px;
+cursor: pointer;
+font: "Koho";
+font-size: 25px;
+border-radius: 10px;
+box-shadow: 0 5px 10px 0 whitesmoke, 0 5px 10px 0 whitesmoke;
+}
+
+.pf-button:hover {
+background-color: #d66767;
+}
+
+.pf-dark-grey{ 
+  background-color: rgb(87, 80, 80);
+  border-radius: 10px;
+}
+
+.xp-percent{
+  font-size: 15px;
+  font-weight: bolder;
+  color: #d66767;
+}
+
