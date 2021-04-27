@@ -55,17 +55,6 @@ body {
   color: #d66767;
 }
 
-/*.pf-navbar a{
-  visibility: hidden;
-}
-
-.pf-navbar a:before{
-  font-family: "Koho";
-  font-size: 25px;
-  display: inline-block;
-  content: initial;
-  visibility: visible;
-}*/
 .container {
   position: relative;
   width: 100%;
@@ -73,35 +62,37 @@ body {
 
 .pf-image {
   display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #d66767;
-}
-
-.container:hover .overlay {
+  
   opacity: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-.text {
-  color: whitesmoke;
-  font-size: 50px;
+.middle {
+  transition: .5s ease;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.logo {
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 .main {
@@ -124,7 +115,6 @@ body {
   border: 2px;
   color: whitesmoke;
   padding: 8px 20px;
-
   margin-bottom: 50px;
   cursor: pointer;
   font: "Koho";
@@ -149,4 +139,45 @@ body {
 
 .socials-link {
   color: whitesmoke;
+}
+
+.pf-contactForm {
+  font-size: 15px;
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+label {
+  display: block;
+}
+
+input [type="text"],
+input [type="email"],
+input [type="tel"]
+ {
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  padding: 0.5rem 0.7rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input [type="text"]:focus,
+input [type="email"]:focus,
+input [type="tel"]:focus
+ {
+  border-color: whitesmoke;
+  outline: 0;
+  box-shadow: 0 0 0 20px whitesmoke;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+textarea {
+  resize: none;
+  margin-top: 2px;
 }
