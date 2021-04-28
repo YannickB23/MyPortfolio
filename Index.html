@@ -67,7 +67,7 @@
     <div class="pf-padding-large" id="main">
         <!--Header/Home-->
         <header class="pf-container" id="home">
-            <h1 class="pf-jumbo">Yannick Beterams .net Developing</h1>           
+            <h1 class="pf-jumbo">Yannick Beterams .net Developing</h1>
             <div class="container">
                 <img src="/assets/images/Csharp.jpg" alt="pc" class="pf-image">
                 <div class="middle">
@@ -95,22 +95,19 @@
             <h2 class="pf-text-title" id="experience">Experience</h2>
             <p class="pf-wide">C sharp</p>
             <div class="pf-white">
-                <p class="xp-percent">95%</p>
-                <div class="pf-dark-grey" style="height: 28px; width: 95%;"></div>
+                <progress class="progBar" value="95" max="100"></progress> 95%
             </div>
             <p class="pf-wide">SQL server</p>
             <div class="pf-white">
-                <p class="xp-percent">80%</p>
-                <div class="pf-dark-grey" style="height: 28px; width: 80%;"></div>
+                <progress class="progBar" value="80" max="100"></progress> 80%
                 <p class="pf-wide">Html</p>
                 <div class="pf-white">
-                    <p class="xp-percent">70%</p>
-                    <div class="pf-dark-grey" style="height: 28px; width: 70%;"></div>
+                    <progress class="progBar" value="65" max="100"></progress> 65%
                     <p class="pf-wide">JavaScript</p>
                     <div class="pf-white">
-                        <p class="xp-percent">40%</p>
-                        <div class="pf-dark-grey" style="height: 28px; width: 40%;"></div>
+                        <progress class="progBar" value="35" max="100"></progress> 35%
                     </div><br>
+                    <button class="pf-button" onclick="move()">Click Me</button>
                     <hr style="width: 300px" class="pf-opacity">
                     <!--End of experience-->
 
@@ -188,6 +185,7 @@
                     <!--End page content-->
                 </div>
                 <script src="/assets/js/clockscript.js"></script>
+                <script src="/assets/js/progressBarScript.js"></script>
 </body>
 
 </html>
