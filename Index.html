@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=KoHo" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/assets/css/Styles.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/navbarStyle.css">
+    <link rel="stylesheet" href="/assets/css/menu.css">
+
     <style>
         body,
         h1,
@@ -24,17 +27,16 @@
             margin-bottom: 12px;
         }
 
-        /* Add a left margin to the "page content" that matches the width of the navbar (120px) */
-
         #main {
-            margin-left: 120px;
+            margin-left: 70px;
+            margin-right: 70px;
         }
     </style>
 </head>
 
 <body class="main">
-    <!--Navbar-->
-    <nav class="pf-navbar">
+    <!--1st navbar-->
+    <!--<nav class="pf-navbar">
         <a href="#" class="pf-sbBtn">
             <i class="fa fa-home"></i>
             <p>Home</p>
@@ -58,10 +60,28 @@
         <a href="#contact" class="pf-sbBtn">
             <i class="fa fa-envelope"></i>
             <p>Contact</p>
+            <div></div>
         </a>
-        <div id="clock"></div>
-    </nav>
-    <!--End of navbar-->
+    </nav>-->
+
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#CV">Curriculum Vitae</a></li>
+                    <li><a href="#myrefs">References</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!--Page Content-->
     <div class="pf-padding-large" id="main">
@@ -76,6 +96,19 @@
             </div>
         </header>
         <!--End of header/home-->
+
+        <!--2nd Navbar-->
+
+        <!--<div id="navbar">
+            <a href="#">Home</a>
+            <a href="#about">About me</a>
+            <a href="#experience">Experience</a>
+            <a href="#CV">Curriculum Vitae</a>
+            <a href="#myrefs">References</a>
+            <a href="#contact">Contact</a>
+        </div>-->
+
+        <!--End of 2nd navbar-->
 
         <!--About me-->
         <div class="pf-content" id="about">
@@ -179,11 +212,13 @@
                     <footer>
                         <p class="pf-text-small">
                             Copyrights @ 2021 Yannick Beterams. All rights reserved.
+                            <div id="clock"></div>
                         </p>
                     </footer>
                     <!--End page content-->
                 </div>
                 <script src="/assets/js/clockscript.js"></script>
+                <script src="/assets/js/navbarScript.js"></script>
 </body>
 
 </html>
