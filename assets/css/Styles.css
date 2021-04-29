@@ -132,7 +132,7 @@ progress[value]::-webkit-progress-value {
 .pf-contactForm {
   font-size: 15px;
   color: whitesmoke;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 2px;
 }
 
@@ -140,32 +140,16 @@ label {
   display: block;
 }
 
-input [type="text"],
-input [type="email"],
-input [type="tel"] {
-  border: 1px solid whitesmoke;
+textarea {
+  resize: none;
+  margin-top: 2px;
   border-radius: 5px;
-  padding: 0.5rem 0.7rem;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-input [type="text"]:focus,
-input [type="email"]:focus,
-input [type="tel"]:focus {
-  border-color: whitesmoke;
-  outline: 0;
-  box-shadow: 0 0 0 20px whitesmoke;
 }
 
 .form-group {
   margin-bottom: 1rem;
   font-size: 15px;
   color: whitesmoke;
-}
-
-textarea {
-  resize: none;
-  margin-top: 2px;
 }
 
 #clock {
