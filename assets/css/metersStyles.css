@@ -73,6 +73,7 @@
 
 .red > span {
   background-image: linear-gradient(rgb(255, 225, 0), rgb(255, 217, 0));
+  border-radius: 5px;
 }
 
 .nostripes > span > span,
