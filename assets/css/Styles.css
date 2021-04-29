@@ -27,34 +27,6 @@ body {
   color: whitesmoke;
 }
 
-/*.pf-navbar {
-  background: url(/assets/images/yBlogo1Transp.png);
-  background-repeat: no-repeat;
-  background-size: 160px 160px;
-  background-blend-mode: color-dodge;
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(54, 54, 54);
-  overflow-x: hidden;
-  padding-top: 150px;
-}
-
-.pf-navbar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-}
-
-.pf-navbar a:hover {
-  color: rgb(255, 217, 0);
-}*/
-
 .container {
   position: relative;
   width: 100%;
