@@ -86,10 +86,11 @@ body {
   background-color: rgb(87, 80, 80);
   color: whitesmoke;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 8px 20px;
+  width: 30%;
+  margin-left: 35%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
   font-size: 15px;
   border-radius: 5px;
@@ -100,10 +101,11 @@ body {
 }
 
 .content {
-  padding: 0 18px;
+  padding: 18px 18px 18px 18px;
   display: none;
   overflow: hidden;
   background-color: rgb(87, 80, 80);
+  width: 35%;
 }
 
 progress[value] {
