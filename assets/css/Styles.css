@@ -82,6 +82,30 @@ body {
   }
 }
 
+.collapsible {
+  background-color: rgb(87, 80, 80);
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(255, 217, 0);
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: rgb(87, 80, 80);
+}
+
 progress[value] {
   -webkit-appearance: none;
   width: 95%;
